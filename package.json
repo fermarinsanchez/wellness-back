@@ -1,0 +1,19 @@
+{
+  "name": "wellness-back",
+  "version": "1.0.0",
+  "description": "API Rest",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fermarinsanchez/wellness-back.git"
+  },
+  "author": "Fernando Marín Sánchez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fermarinsanchez/wellness-back/issues"
+  },
+  "homepage": "https://github.com/fermarinsanchez/wellness-back#readme"
+}
