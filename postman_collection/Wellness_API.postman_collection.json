@@ -1,0 +1,125 @@
+{
+	"info": {
+		"_postman_id": "70b3197d-0ca2-4c1f-a2f6-d57a34bf1207",
+		"name": "Wellness_API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all data (readAllDetails)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3030/details",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"details"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read One (readOne)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3030/details/608da3ba9c2d64c2f1dc1513",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"details",
+						"608da3ba9c2d64c2f1dc1513"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post new data (create)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"date\": \"2022-11-01\",\n    \"hours\": 5,\n    \"consume\": 7,\n    \"price\": 0.000999888,\n    \"costPerHour\": 0.0909090\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3030/details",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"details"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update data (update)",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3030/details/608da3ba9c2d64c2f1dc1512",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"details",
+						"608da3ba9c2d64c2f1dc1512"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete data (delete)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3030/details/608da3ba9c2d64c2f1dc1513",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"details",
+						"608da3ba9c2d64c2f1dc1513"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
