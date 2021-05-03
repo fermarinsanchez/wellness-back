@@ -4,7 +4,7 @@ const createError = require('http-errors')
 module.exports.create = (req, res, next) => {
     const { date, hours, consume, price, costPerHour } = req.body;
     if (!date || !hours || !consume || !price || !costPerHour) {
-      throw createError(400, "All inputs is required");
+      throw createError(400, "All inputs are required");
     }
     const details = new Details(req.body)
     details 
@@ -33,13 +33,13 @@ module.exports.update = (req, res, next) => {
         new: true,
         runValidators: true
     })
-    .then((user) => res.status(200).json(user))
+    .then((data) => res.status(200).json(data))
     .catch(next)
 }
 
 module.exports.delete = (req, res, next) => {
-    Data.findByIdAndDelete(req.params.id)
+    Details.findByIdAndDelete(req.params.id)
       .then(() => res.status(204).json())
       .catch(next);
-}
+  };
 

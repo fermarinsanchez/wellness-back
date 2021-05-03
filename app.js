@@ -9,7 +9,7 @@ const app = express();
 
 app.use(cors);
 app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: true }));
 
 const router = require('./config/routes');
 app.use('/', router);
@@ -19,8 +19,6 @@ app.use(function (_, _, next) {
 });
 
 app.use(function (error, _, res, _) {
-    console.error('-' * 1000)
-    console.error.error(error)
 
     res.status(error.status || 500);
 
