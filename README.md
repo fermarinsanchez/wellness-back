@@ -1,7 +1,11 @@
 
 # Wellness Technical test - Backend (API)
 
+---
+
 API Rest con Node.js, Express.js y base de datos no relacional con MongoDB.
+
+---
 
 **Instalación y puesta en marcha:**
 
@@ -15,18 +19,18 @@ API Rest con Node.js, Express.js y base de datos no relacional con MongoDB.
 
 - Adjunto en carpeta 'postman_collection" el JSON de la colección de pruebas de los endpoints realizadas Postman.
 
+---
+
 ** Dependencias: **
 
- "@fast-csv/format": "^4.3.5",
- "@fast-csv/parse": "^4.3.6",
- "cors": "^2.8.5",
- "dotenv": "^8.2.0",
- "express": "^4.17.1",
- "fast-csv": "^4.3.6",
- "http-errors": "^1.8.0",
- "mongoose": "^5.12.7"
- 
- ___
+ "@fast-csv/format": "^4.3.5"\
+ "@fast-csv/parse": "^4.3.6"\
+ "cors": "^2.8.5"\
+ "dotenv": "^8.2.0"\
+ "express": "^4.17.1"\
+ "fast-csv": "^4.3.6"\
+ "http-errors": "^1.8.0"\
+ "mongoose": "^5.12.7"\
  
 ** Dependencias de desarrollo: **
 
