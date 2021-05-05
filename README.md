@@ -15,7 +15,7 @@ API Rest con Node.js, Express.js y base de datos no relacional con MongoDB.
 
 - Adjunto en carpeta 'postman_collection" el JSON de la colección de pruebas de los endpoints realizadas Postman.
 
-** Dependencias:
+** Dependencias: **
 
  "@fast-csv/format": "^4.3.5",
  "@fast-csv/parse": "^4.3.6",
@@ -26,7 +26,9 @@ API Rest con Node.js, Express.js y base de datos no relacional con MongoDB.
  "http-errors": "^1.8.0",
  "mongoose": "^5.12.7"
  
-** Dependencias de desarrollo:
+ ___
+ 
+** Dependencias de desarrollo: **
 
 "jest": "^26.6.3",
 "nodemon": "^2.0.7",
