@@ -4,23 +4,18 @@ const detailsSchema = new mongoose.Schema(
     {
         date: {
             type: Date,
-            required: [true, 'La fecha es obligatoria']
         },
         hours: {
-            type: Number,
-            required: [true, 'La hora es obligatoria']
+            type: Number
         },
         consume: {
-            type: Number,
-            required: [true, 'el consumo  es obligatorio']
+            type: Number
         },
         price: {
-            type: Number,
-            required: [true, 'El precio es obligatorio']
+            type: Number
         },
         costPerHour: {
-            type: Number,
-            required: [true, 'El precio por hora es obligatorio']
+            type: Number
         }
     }, {
         timestamps: true,

@@ -28,7 +28,6 @@ const getData = async () => {
       })
       .on('end', async () => {
         csvData.shift()
-        console.log(csvData.length)
         await setData(csvData)
       })
     stream.pipe(csvStream)
@@ -40,7 +39,7 @@ const setData = async (dataFromCsv) => {
     const data = new Details(newDetails)
     data
       .save()
-      .then(() => { console.log('seed the database')})
+      .then((data) => { console.log(data)})
       .catch()
   })
 }
